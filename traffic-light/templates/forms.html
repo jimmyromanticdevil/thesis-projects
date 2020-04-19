@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Simple Task Celery</title>
+<style>
+table#example tr td {text-align:center;}
+</style>
+<body style="text-align:center">
+<div class="box round" style="min-height:300px;">
+  <h2>Task List</h2>
+  <div class="block service_list">
+    <form method="POST" action="{% url task %}">{% csrf_token %}
+    <table align="center" border="2">
+     <thead>
+	    <tr>
+	    <th>Antrian Jalan Leimena</th>
+            <th>Antrian Di Jalan Perintis</th>
+            <th>Arrival Rate Kendaraan</th>
+        </tr>
+     </thead>
+     <tbody>
+     <tr>
+        <td class="center"><input tyle="text" name="at_leimena" placeholder="masukan antrian jalan"/></td>
+        <td class="center"><input tyle="text" name="at_printis"/></td>
+        <td class="center"><input tyle="text" name="at_rate"/></td>
+     </tr>
+     </tbody>
+   </table>
+   <input type="submit" name="sending" value="Send"/>
+   </form>
+</div>
+</div>
+</body>
+</html>
+
