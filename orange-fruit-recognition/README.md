@@ -7,6 +7,7 @@ http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspbe
 CODE
 - main_program.py : Program ini mendeteksi 1 gambar. dan langsung menampilkan result di terminal
 - main_window.py : program ini mendeteksi secara massal atau semua file dalam 1 folder dan menampilkan output di terminal dan window GUI (image viewer)
+- capture_with_camera.py : program ini mendeteksi dengan menggunakan capture kamera webcam secara langsung.
 
 CARA MENJALANKAN
 
